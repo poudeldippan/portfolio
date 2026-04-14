@@ -32,7 +32,7 @@ const skillLogos = [
   { name: "WordPress", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" },
   { name: "Elementor", src: "https://cdn.simpleicons.org/elementor" },
   { name: "WooCommerce", src: "https://cdn.simpleicons.org/woocommerce" },
-  { name: "Adobe Illustrator", src: "https://cdn.simpleicons.org/adobeillustrator" },
+  { name: "Adobe Illustrator", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" },
   { name: "Svelte", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg" },
   { name: "HTML5", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
   { name: "CSS3", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
