@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Art | Dippan Poudel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body data-page="3d-art">
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="../index.html">DIPPAN POUDEL</a>
+      <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <div class="nav-panel" id="navPanel">
+        <ul class="nav-links">
+          <li class="nav-dropdown">
+            <button class="dropdown-toggle nav-link is-active" type="button" aria-expanded="false">My Portfolio <span>▼</span></button>
+            <ul class="dropdown-menu">
+              <li><a href="websites.html">Web Development</a></li>
+              <li><a href="graphics.html">Graphics Design</a></li>
+              <li><a class="is-active" href="3d-art.html">3D Art</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" data-nav="contact" href="../contact.html">Contact</a></li>
+        </ul>
+        <div class="clock-wrap">
+          <div class="clock-pill"><span class="clock-icon">🕐</span><span>NPT</span><span id="clock-npt">00:00:00</span></div>
+          <div class="clock-pill"><span class="clock-icon">🕐</span><span>LOCAL</span><span id="clock-local">00:00:00</span></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container page-main">
+    <section class="page-title reveal">
+      <p class="section-label">Portfolio</p>
+      <h1>3D Art</h1>
+      <p>Freelance 3D artwork and renders created in Blender.</p>
+    </section>
+    <section id="art-all-grid" class="card-grid"></section>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close" aria-label="Close">�</button>
+    <button type="button" class="lightbox-nav prev" aria-label="Previous image">�</button>
+    <img id="lightbox-image" src="" alt="Expanded 3D artwork">
+    <button type="button" class="lightbox-nav next" aria-label="Next image">�</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>Dippan Poudel<br><span>Web Developer � Designer � 3D Artist</span></p>
+      <p><a href="../index.html">Home</a> � <a href="websites.html">Portfolio</a> � <a href="../contact.html">Contact</a></p>
+      <p>� 2025 Dippan Poudel. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

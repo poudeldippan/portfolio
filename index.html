@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dippan Poudel | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html">DIPPAN POUDEL</a>
+      <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <div class="nav-panel" id="navPanel">
+        <ul class="nav-links">
+          <li class="nav-dropdown">
+            <button class="dropdown-toggle nav-link" type="button" aria-expanded="false">My Portfolio <span>▼</span></button>
+            <ul class="dropdown-menu">
+              <li><a href="portfolio/websites.html">Web Development</a></li>
+              <li><a href="portfolio/graphics.html">Graphics Design</a></li>
+              <li><a href="portfolio/3d-art.html">3D Art</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" data-nav="contact" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="clock-wrap">
+          <div class="clock-pill"><span class="clock-icon">🕐</span><span>NPT</span><span id="clock-npt">00:00:00</span></div>
+          <div class="clock-pill"><span class="clock-icon">🕐</span><span>LOCAL</span><span id="clock-local">00:00:00</span></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container reveal">
+      <div class="hero-text">
+        <h1>Hi, I'm Dippan Poudel</h1>
+        <p class="subheadline">Web Developer � Graphics Designer � 3D Artist</p>
+        <p>Professional web developer based in Nepal with a portfolio of 10+ websites, specialising in hydropower sector clients. Also a graphics designer creating product labels for Diyo Foods, and a freelance 3D artist working in Blender.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#home-work">View My Work</a>
+          <a class="btn btn-outline" href="contact.html">Contact Me</a>
+        </div>
+      </div>
+      <figure class="hero-media">
+        <img src="assets/images/1.jpeg" alt="Portrait of Dippan Poudel">
+      </figure>
+    </section>
+
+    <section id="home-work" class="preview-section container">
+      <p class="section-label reveal">Portfolio</p>
+      <h2 class="reveal">Web Development</h2>
+      <div id="web-preview-grid" class="card-grid"></div>
+      <p class="view-all"><a href="portfolio/websites.html">View All Projects →</a></p>
+    </section>
+
+    <section class="preview-section container">
+      <p class="section-label reveal">Portfolio</p>
+      <h2 class="reveal">Graphics Design</h2>
+      <div id="graphics-preview-grid" class="card-grid"></div>
+      <p class="view-all"><a href="portfolio/graphics.html">View All Work →</a></p>
+    </section>
+
+    <section class="preview-section container">
+      <p class="section-label reveal">Portfolio</p>
+      <h2 class="reveal">3D Art</h2>
+      <div id="art-preview-grid" class="card-grid"></div>
+      <p class="view-all"><a href="portfolio/3d-art.html">View All Work →</a></p>
+    </section>
+
+    <section class="skills-section container reveal">
+      <h2>Tools &amp; Technologies</h2>
+      <div class="skills-ticker">
+        <div class="skills-track" id="skills-track"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>Dippan Poudel<br><span>Web Developer � Designer � 3D Artist</span></p>
+      <p><a href="index.html">Home</a> � <a href="portfolio/websites.html">Portfolio</a> � <a href="contact.html">Contact</a></p>
+      <p>© 2026 Dippan Poudel. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

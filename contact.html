@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Dippan Poudel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html">DIPPAN POUDEL</a>
+      <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <div class="nav-panel" id="navPanel">
+        <ul class="nav-links">
+          <li class="nav-dropdown">
+            <button class="dropdown-toggle nav-link" type="button" aria-expanded="false">My Portfolio <span>▼</span></button>
+            <ul class="dropdown-menu">
+              <li><a href="portfolio/websites.html">Web Development</a></li>
+              <li><a href="portfolio/graphics.html">Graphics Design</a></li>
+              <li><a href="portfolio/3d-art.html">3D Art</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link is-active" data-nav="contact" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="clock-wrap">
+          <div class="clock-pill"><span class="clock-icon">🕐</span><span>NPT</span><span id="clock-npt">00:00:00</span></div>
+          <div class="clock-pill"><span class="clock-icon">🕐</span><span>LOCAL</span><span id="clock-local">00:00:00</span></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container page-main contact-main">
+    <section class="contact-intro reveal">
+      <h1>Let's Work Together</h1>
+      <p>Have a project in mind? I'd love to hear about it. Fill in the form and I'll get back to you as soon as possible.</p>
+      <p><strong>Email:</strong> poudeldippan2004@gmail.com</p>
+      <p><strong>Location:</strong> Nepal</p>
+    </section>
+    <section class="contact-form-wrap reveal">
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit" class="btn">Submit</button>
+        <p id="form-success" class="form-success" hidden>Thanks! I'll be in touch soon.</p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>Dippan Poudel<br><span>Web Developer � Designer � 3D Artist</span></p>
+      <p><a href="index.html">Home</a> � <a href="portfolio/websites.html">Portfolio</a> � <a href="contact.html">Contact</a></p>
+      <p>© 2026 Dippan Poudel. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
