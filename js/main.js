@@ -99,8 +99,14 @@ function setupMenu() {
     toggle.setAttribute("aria-expanded", String(open));
   });
 
+  // Only use click toggle for dropdown on mobile (< 1025px)
   if (dropdown && dropdownBtn) {
-    dropdownBtn.addEventListener("click", () => {
+    dropdownBtn.addEventListener("click", (e) => {
+      // Check if we're on desktop
+      if (window.innerWidth >= 1025) {
+        return; // Let CSS hover handle it
+      }
+      e.preventDefault();
       const open = dropdown.classList.toggle("open");
       dropdownBtn.setAttribute("aria-expanded", String(open));
     });
