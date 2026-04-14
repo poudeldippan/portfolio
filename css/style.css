@@ -158,7 +158,8 @@ input, textarea {
     flex: 1;
   }
   .nav-links { margin-left: auto; align-items: center; flex-direction: row; gap: 1.2rem; }
-  .dropdown-menu { position: absolute; top: calc(100% + 0.4rem); min-width: 210px; }
+  .nav-dropdown { padding-bottom: 0.5rem; }
+  .dropdown-menu { position: absolute; top: 100%; min-width: 210px; z-index: 999; margin-top: 0; }
   .nav-dropdown:hover .dropdown-menu { display: block; }
   .clock-wrap { margin-top: 0; flex-direction: row; }
   .card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
