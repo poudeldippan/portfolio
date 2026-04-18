@@ -204,10 +204,20 @@ function setupContactForm() {
   const form = document.querySelector("#contact-form");
   const success = document.querySelector("#form-success");
   if (!form || !success) return;
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    success.hidden = false;
-    form.reset();
+    const endpoint = "https://formsubmit.co/ajax/poudeldippan2004@gmail.com";
+    const formData = new FormData(form);
+    formData.append("_captcha", "false");
+    try {
+      const res = await fetch(endpoint, { method: "POST", body: formData });
+      if (!res.ok) throw new Error('Network response was not ok');
+      success.hidden = false;
+      form.reset();
+    } catch (err) {
+      alert('Could not send message. Please email poudeldippan2004@gmail.com directly.');
+      console.error(err);
+    }
   });
 }
 
